@@ -15,7 +15,6 @@ export const obtenerCliente = async (req, res) => {
 
 // API PARA GUARDAR UN NUEVO REGISTRO EN LA TABLA CLIENTES
 export const guardarCliente = async (req, res) => {
-    console.log("entre");
     const {nombre} = req.body
     const {apellido_paterno} = req.body
     const {apellido_materno} = req.body

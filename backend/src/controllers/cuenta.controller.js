@@ -15,7 +15,6 @@ export const obtenerCuenta = async (req, res) => {
 
 // API PARA GUARDAR UN REGISTRO EN LA TABLA CUENTAS
 export const guardarCuenta = async (req, res) => {
-    console.log("entre");
     const {nombre_cuenta} = req.body
 
     const [rows] = await pool.query(`CALL guardarCuenta(?)`, [nombre_cuenta])
